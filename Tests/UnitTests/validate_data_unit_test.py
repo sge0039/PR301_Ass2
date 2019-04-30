@@ -1,8 +1,8 @@
 import unittest
-from validate_data import ValidateData
+from Model.validate_data import ValidateData
 
 
-class MainTest(unittest.TestCase):
+class ValidateDataTest(unittest.TestCase):
     def setUp(self):
         pass
 

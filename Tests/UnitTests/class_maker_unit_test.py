@@ -1,8 +1,8 @@
 import unittest
-from class_maker import ClassMaker
+from Model.class_maker import ClassMaker
 
 
-class MainTest(unittest.TestCase):
+class ClassMakerTest(unittest.TestCase):
     def setUp(self):
         pass
 

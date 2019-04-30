@@ -10,13 +10,14 @@ class FileHandler:
     def __init__(self):
         self.root = Tk()
 
-    def load_from_file(self):
+    def load_from_file(self, file_name=None):
         """
         >>> file_handler = FileHandler()
         >>> file_handler.load_from_file()
         ['@startuml\\n', 'class LevelEditor{\\n', '  allMyBlocks\\n', '  getBlock()\\n', '}\\n', '@enduml']
         """
-        file_name = self.get_file_name()
+        if file_name is None:
+            file_name = self.get_file_name()
         with open(file_name, 'r') as f:
             return f.readlines()
 
@@ -49,8 +50,11 @@ class FileHandler:
         assert self.root.filename, 'No file selected'
         return self.root.filename
 
-    def get_folder_dir(self):
-        self.root.directory = filedialog.askdirectory(title="Select Save Folder Location")
+    def get_folder_dir(self, directory=None):
+        if directory is None:
+            self.root.directory = filedialog.askdirectory(title="Select Save Folder Location")
+        else:
+            self.root.directory = directory
         assert self.root.directory, 'No save folder selected'
 
 
