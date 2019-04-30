@@ -1,0 +1,31 @@
+@startuml
+
+LevelEditor -- Gag
+
+class LevelEditor{
+  LevelEditor : Gag
+  allMyBlocks : Float
+  allMyWalls : String
+  getBlock()
+  getWall(): List
+  getTarget(): Dict
+  getPlayer()
+}
+
+
+class Gag{
+  row
+  columns
+  grid
+  getBlock(inputAge, inputName)
+  getWall()
+  getTarget()
+  getPlayer()
+}
+
+class Test{
+  magTJii()
+  agagag()
+}
+
+@enduml
