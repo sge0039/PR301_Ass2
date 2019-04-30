@@ -2,7 +2,7 @@ import unittest
 from View.view import View
 
 
-class ClassMakerTest(unittest.TestCase):
+class ViewTest(unittest.TestCase):
     def setUp(self):
         pass
 

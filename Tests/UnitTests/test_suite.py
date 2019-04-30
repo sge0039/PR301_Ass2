@@ -1,6 +1,7 @@
 from Tests.UnitTests.class_maker_unit_test import ClassMakerTest
 from Tests.UnitTests.file_handler_unit_test import FileHandlerTest
 from Tests.UnitTests.validate_data_unit_test import ValidateDataTest
+from Tests.UnitTests.view_unit_test import ViewTest
 
 import unittest
 import coverage
@@ -11,6 +12,7 @@ def suite():
     the_suite.addTest(unittest.makeSuite(ClassMakerTest))
     the_suite.addTest(unittest.makeSuite(FileHandlerTest))
     the_suite.addTest(unittest.makeSuite(ValidateDataTest))
+    the_suite.addTest(unittest.makeSuite(ViewTest))
     return the_suite
 
 
