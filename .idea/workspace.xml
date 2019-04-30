@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f106d8-2956-498a-a746-bbe0386b93dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/test_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_OEM_Documents_ARA_Degree_AdvanceProgramming_PR301_Ass2_Model_class_maker_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_OEM_Documents_ARA_Degree_AdvanceProgramming_PR301_Ass2_Model_class_maker_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_OEM_Documents_ARA_Degree_AdvanceProgramming_PR301_Ass2_View_view_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_OEM_Documents_ARA_Degree_AdvanceProgramming_PR301_Ass2_View_view_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/class_maker_unit_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/class_maker_unit_test_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/status.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/UnitTests/test_suite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -28,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="578">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -39,7 +45,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/view.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -70,6 +80,7 @@
         <option value="$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/class_maker_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/InputOutputFiles/view_unit_test.py" />
+        <option value="$PROJECT_DIR$/View/view.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/test_suite.py" />
       </list>
@@ -95,6 +106,11 @@
             <path>
               <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
               <item name="PR301_Ass2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PR301_Ass2" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
@@ -149,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for view_unit_test.ClassMakerTest.test_02">
+  <component name="RunManager" selected="Python.test_suite">
     <configuration name="test_suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR301_Ass2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,9 +245,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_suite" />
         <item itemvalue="Python tests.Unittests for view_unit_test.ClassMakerTest.test_02" />
         <item itemvalue="Python tests.Unittests for view_unit_test.ClassMakerTest.test_01" />
-        <item itemvalue="Python.test_suite" />
         <item itemvalue="Python tests.Unittests in validate_data_unit_test.py" />
         <item itemvalue="Python tests.Unittests for file_handler_unit_test.FileHandlerTest.test_02" />
       </list>
@@ -287,7 +303,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32967034" />
@@ -295,7 +311,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,23 +386,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/View/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="578">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/view.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests/test_suite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>

@@ -27,8 +27,7 @@ class ViewTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
-    # with more details
+    unittest.main(verbosity=2) # with more details
     # unittest.main()
     # Arrange
     # Act
