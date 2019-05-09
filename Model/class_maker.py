@@ -1,5 +1,5 @@
-from View.view import View
-from Model.my_error import MyError
+from View.view import View  # pragma: no cover
+from Model.my_error import MyError  # pragma: no cover
 
 
 class ClassMaker:
@@ -231,7 +231,7 @@ class ClassMaker:
         return name
 
 
-if __name__ == "__main__":
-    import doctest
+if __name__ == "__main__":  # pragma: no cover
+    import doctest  # pragma: no cover
     # doctest.testmod()
-    doctest.testmod(verbose=True)
+    doctest.testmod(verbose=True)  # pragma: no cover

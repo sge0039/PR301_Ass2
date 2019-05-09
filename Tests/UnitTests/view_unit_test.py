@@ -19,11 +19,27 @@ class ViewTest(unittest.TestCase):
 
     def test_02(self):
         # Arrange
+        expected_result = 'Hello\nWorld'
+        # Act
+        actual_result = 'Hello' + View.newline() + 'World'
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be "Hello World')
+
+    def test_03(self):
+        # Arrange
         expected_result = '    '
         # Act
         actual_result = View.tab()
         # Assert
         self.assertEqual(actual_result, expected_result, 'Expected to be four spaces')
+
+    def test_04(self):
+        # Arrange
+        expected_result = 'Hello    World'
+        # Act
+        actual_result = 'Hello' + View.tab() + 'World'
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be "Hello    World')
 
 
 if __name__ == '__main__':
