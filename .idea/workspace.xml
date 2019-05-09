@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f106d8-2956-498a-a746-bbe0386b93dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_Simon England_Documents_ARA_PR301_Ass2_Model_class_maker_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_Simon England_Documents_ARA_PR301_Ass2_Model_class_maker_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_Simon England_Documents_ARA_PR301_Ass2_Model_file_handler_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/_Users_Simon England_Documents_ARA_PR301_Ass2_Model_file_handler_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,28 +13,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/file_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/UnitTests/test_suite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="34">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -51,22 +25,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/class_maker.py">
+        <entry file="file://$PROJECT_DIR$/Model/validate_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/controller.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="229">
+              <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +67,6 @@
       <list>
         <option value="$PROJECT_DIR$/Controller/controller.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/test_suit.py" />
-        <option value="$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/class_maker_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/InputOutputFiles/view_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/test_suite.py" />
@@ -103,6 +76,7 @@
         <option value="$PROJECT_DIR$/Model/class_maker.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/view_unit_test.py" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py" />
+        <option value="$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py" />
       </list>
     </option>
   </component>
@@ -125,16 +99,6 @@
             <path>
               <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
               <item name="PR301_Ass2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR301_Ass2" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR301_Ass2" type="462c0819:PsiDirectoryNode" />
-              <item name="deleteme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PR301_Ass2" type="b2602c69:ProjectViewProjectNode" />
@@ -200,27 +164,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.test_suite">
-    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PR301_Ass2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller/controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR301_Ass2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_02" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_07" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PR301_Ass2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,11 +195,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;file_handler_unit_test.FileHandlerTest.test_02&quot;" />
+      <option name="_new_target" value="&quot;validate_data_unit_test.ValidateDataTest.test_07&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_03" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_08" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PR301_Ass2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,11 +209,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;file_handler_unit_test.FileHandlerTest.test_03&quot;" />
+      <option name="_new_target" value="&quot;validate_data_unit_test.ValidateDataTest.test_08&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in file_handler_unit_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_09" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PR301_Ass2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,17 +223,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;validate_data_unit_test.ValidateDataTest.test_09&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_10" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PR301_Ass2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/UnitTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;validate_data_unit_test.ValidateDataTest.test_10&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_suite" />
-        <item itemvalue="Python tests.Unittests for file_handler_unit_test.FileHandlerTest.test_03" />
-        <item itemvalue="Python tests.Unittests in file_handler_unit_test.py" />
-        <item itemvalue="Python.controller" />
-        <item itemvalue="Python tests.Unittests for file_handler_unit_test.FileHandlerTest.test_02" />
+        <item itemvalue="Python tests.Unittests for validate_data_unit_test.ValidateDataTest.test_10" />
+        <item itemvalue="Python tests.Unittests for validate_data_unit_test.ValidateDataTest.test_09" />
+        <item itemvalue="Python tests.Unittests for validate_data_unit_test.ValidateDataTest.test_08" />
+        <item itemvalue="Python tests.Unittests for validate_data_unit_test.ValidateDataTest.test_07" />
       </list>
     </recent_temporary>
   </component>
@@ -308,21 +265,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_view_unit_test_ClassMakerTest_test_02 - 2019.04.30 at 17h 10m 45s.xml">
-      <configuration name="Unittests for view_unit_test.ClassMakerTest.test_02" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_view_unit_test_py - 2019.05.09 at 13h 16m 38s.xml">
-      <configuration name="Unittests in view_unit_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_file_handler_unit_test_FileHandlerTest_test_02 - 2019.05.09 at 14h 50m 37s.xml">
-      <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_02" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_file_handler_unit_test_FileHandlerTest_test_03 - 2019.05.09 at 14h 54m 16s.xml">
-      <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_03" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_file_handler_unit_test_FileHandlerTest_test_03 - 2019.05.09 at 14h 57m 12s.xml">
-      <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_03" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_file_handler_unit_test_FileHandlerTest_test_03 - 2019.05.09 at 14h 58m 01s.xml">
       <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_03" configurationId="tests" />
     </history-entry>
@@ -337,6 +279,21 @@
     </history-entry>
     <history-entry file="Unittests_for_file_handler_unit_test_FileHandlerTest_test_03 - 2019.05.09 at 15h 00m 53s.xml">
       <configuration name="Unittests for file_handler_unit_test.FileHandlerTest.test_03" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_validate_data_unit_test_ValidateDataTest_test_07 - 2019.05.09 at 15h 12m 25s.xml">
+      <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_07" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_validate_data_unit_test_ValidateDataTest_test_08 - 2019.05.09 at 15h 13m 11s.xml">
+      <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_08" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_validate_data_unit_test_ValidateDataTest_test_08 - 2019.05.09 at 15h 14m 15s.xml">
+      <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_08" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_validate_data_unit_test_ValidateDataTest_test_09 - 2019.05.09 at 15h 16m 05s.xml">
+      <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_09" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_validate_data_unit_test_ValidateDataTest_test_10 - 2019.05.09 at 15h 16m 35s.xml">
+      <configuration name="Unittests for validate_data_unit_test.ValidateDataTest.test_10" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -370,30 +327,10 @@
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests/.coverage">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/class_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,9 +343,6 @@
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/validate_data.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/my_error.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -433,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/file_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -454,20 +381,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/class_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/file_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests/test_suite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="34">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/file_handler_unit_test.py">
+    <entry file="file://$PROJECT_DIR$/Model/validate_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/validate_data_unit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
