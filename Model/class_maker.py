@@ -121,7 +121,7 @@ class ClassMaker:
             for relationship in new_relationship:
                 relationships.append(relationship.replace(':', ': '))
             # raise MyError("test: raise an exception")
-        except ValueError as err:
+        except TypeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
