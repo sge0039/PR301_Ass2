@@ -1,5 +1,5 @@
-from View.view import View  # pragma: no cover
-from Model.my_error import MyError  # pragma: no cover
+from View.view import View
+from Model.my_error import MyError
 
 
 class ClassMaker:
@@ -107,7 +107,7 @@ class ClassMaker:
         >>> c_maker.get_data_type(data)
         'not_data_type'
         """
-        data_type_dict = {'String': 'str', 'Interger': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
+        data_type_dict = {'String': 'str', 'Integer': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
                           'Tuple': '()', 'Dict': '{}'}
         if new_data in data_type_dict.keys():
             return data_type_dict[new_data]
@@ -229,7 +229,7 @@ class ClassMaker:
         return name
 
 
-if __name__ == "__main__":  # pragma: no cover
-    import doctest  # pragma: no cover
+if __name__ == "__main__":
+    import doctest
     # doctest.testmod()
-    doctest.testmod(verbose=True)  # pragma: no cover
+    doctest.testmod(verbose=True)

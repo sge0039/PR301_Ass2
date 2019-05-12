@@ -1,7 +1,7 @@
-try:  # pragma: no cover
-    from my_error import MyError   # pragma: no cover
-except ImportError:  # pragma: no cover
-    print(ImportError)  # pragma: no cover
+try:
+    from my_error import MyError
+except ImportError:
+    print(ImportError)
 
 
 class UmlInterpreter:

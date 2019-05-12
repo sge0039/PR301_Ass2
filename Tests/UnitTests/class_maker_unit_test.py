@@ -177,6 +177,7 @@ class ClassMakerTest(unittest.TestCase):
         # Assert
         self.assertEqual(actual_result, expected_result, 'Expected to be a Strings')
 
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
     # with more details
