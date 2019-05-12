@@ -49,12 +49,10 @@ class ClassMaker:
         try:
             print("This is the beginning.")
             class_name = new_class_name.replace(new_class_name[0], new_class_name[0].upper(), 1)
-        except ValueError as err:
+        except AttributeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
-        except:
-            print("An unexpected exception just happened.")
         else:
             print("No exception is raised")
             return 'class ' + class_name + ':' + View.newline()

@@ -79,6 +79,28 @@ class ClassMakerTest(unittest.TestCase):
         # Assert
         self.assertEqual(actual_result, expected_result, 'Expected to be a List of Strings')
 
+    def test_08(self):
+        # Arrange
+        name = ['allMyBlocks:Float', 'allMyWalls:String']
+        c_maker = ClassMaker()
+        expected_result = '    def __init__(self):\n        self.all_my_blocks: float\n        self.all_my_walls: str\n'
+        # Act
+        actual_result = c_maker.attribute_maker(name)
+        print(actual_result)
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be a List of Strings')
+
+    def test_09(self):
+        # Arrange
+        name = ['Thequickbrownfox']
+        c_maker = ClassMaker()
+        expected_result = AttributeError
+        # Act
+        actual_result = c_maker.class_maker(name)
+        # Assert
+        self.assertRaises(expected_result, actual_result)
+        # self.assertEqual(actual_result, expected_result, 'Expected to be a List of Strings')
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
