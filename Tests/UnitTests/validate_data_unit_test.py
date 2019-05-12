@@ -1,8 +1,8 @@
 import unittest
-from validate_data import ValidateData
+from Model.validate_data import ValidateData
 
 
-class MainTest(unittest.TestCase):
+class ValidateDataTest(unittest.TestCase):
     def setUp(self):
         pass
 
@@ -79,6 +79,47 @@ class MainTest(unittest.TestCase):
         actual_result = validate.check_class_count()
         # Assert
         self.assertEqual(actual_result, expected_result, 'Expected to be False')
+
+    def test_07(self):
+        # Arrange
+        data = ['@startuml\\n', 'class LevelEditor{\\n', '  allMyBlocks\\n', '  getBlock()\\n', '}\\n', '@enduml']
+        validate = ValidateData(data)
+        expected_result = True
+        # Act
+        actual_result = validate.is_validate_date()
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be True')
+
+    def test_08(self):
+        # Arrange
+        data = ['@startuml\\n', 'LevelEditor{\\n', '  allMyBlocks\\n', '  getBlock()\\n', '}\\n', '@enduml']
+        validate = ValidateData(data)
+        expected_result = False
+        # Act
+        actual_result = validate.is_validate_date()
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be False')
+
+    def test_09(self):
+        # Arrange
+        data = ['@startuml\\n', 'class LevelEditor{\\n', '  allMyBlocks\\n', '  getBlock()\\n', '}\\n']
+        validate = ValidateData(data)
+        expected_result = False
+        # Act
+        actual_result = validate.is_validate_date()
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be False')
+
+    def test_10(self):
+        # Arrange
+        data = ['class LevelEditor{\\n', '  allMyBlocks\\n', '  getBlock()\\n', '}\\n', '@enduml']
+        validate = ValidateData(data)
+        expected_result = False
+        # Act
+        actual_result = validate.is_validate_date()
+        # Assert
+        self.assertEqual(actual_result, expected_result, 'Expected to be True')
+
 
 
 if __name__ == '__main__':

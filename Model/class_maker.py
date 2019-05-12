@@ -49,12 +49,10 @@ class ClassMaker:
         try:
             print("This is the beginning.")
             class_name = new_class_name.replace(new_class_name[0], new_class_name[0].upper(), 1)
-        except ValueError as err:
+        except AttributeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
-        except:
-            print("An unexpected exception just happened.")
         else:
             print("No exception is raised")
             return 'class ' + class_name + ':' + View.newline()
@@ -109,7 +107,7 @@ class ClassMaker:
         >>> c_maker.get_data_type(data)
         'not_data_type'
         """
-        data_type_dict = {'String': 'str', 'Interger': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
+        data_type_dict = {'String': 'str', 'Integer': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
                           'Tuple': '()', 'Dict': '{}'}
         if new_data in data_type_dict.keys():
             return data_type_dict[new_data]
@@ -123,7 +121,7 @@ class ClassMaker:
             for relationship in new_relationship:
                 relationships.append(relationship.replace(':', ': '))
             # raise MyError("test: raise an exception")
-        except ValueError as err:
+        except TypeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
