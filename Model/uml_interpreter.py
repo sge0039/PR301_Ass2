@@ -25,7 +25,7 @@ class UmlInterpreter:
             elif self.is_relationship(line):
                 relationship.append(self.uml_relationship(line))
             elif self.is_attribute(line):
-                attr_list.append(self.uml_attribute(line))
+                attr_list.append(self.char_remover(line, ['\n', '\t', '(', ')', ' ']))
         return self.place_relationship(relationship, self.uml_list)
 
     def is_class(self, line):
@@ -80,16 +80,6 @@ class UmlInterpreter:
                 item['relationship'] = relationship_list
                 relationship_list = []
         return new_uml_list
-
-    def uml_attribute(self, new_line):
-        """
-        >>> line = '  allMyBlocks\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'allMyBlocks'
-        """
-        remove_list = ['\n', '\t', '(', ')', ' ']
-        return self.char_remover(new_line, remove_list)
 
     def char_remover(self, string_input, remove_list):
         """
