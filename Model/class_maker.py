@@ -151,13 +151,18 @@ class ClassMaker:
             method_name = self.name_to_lower(method_name_arg[0])
             method_args = method_name_arg[1].split(',')
             methods += View.tab() + 'def ' + method_name + '(self'
-            for arg in method_args:
-                if len(arg) > 0:
-                    methods += ', ' + self.name_to_lower(arg)
+            methods += self.method_parameter(method_args)
             return_type = self.method_return_type(method_name_arg_data_type)
             methods += '):' + View.newline()
             methods += View.tab() + View.tab() + return_type + View.newline() + View.newline()
         return methods
+
+    def method_parameter(self, para_list):
+        result = ''
+        for para in para_list:
+            if len(para) > 0:
+                result += ', ' + self.name_to_lower(para)
+        return result
 
     def method_return_type(self, data):
         if len(data) > 1:
