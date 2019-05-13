@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9f106d8-2956-498a-a746-bbe0386b93dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Model/class_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/class_maker.py" afterDir="false" />
-    </list>
+    <list default="true" id="e9f106d8-2956-498a-a746-bbe0386b93dc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/class_maker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="151" column="55" selection-start-line="151" selection-start-column="55" selection-end-line="151" selection-end-column="55" />
+            <state relative-caret-position="229">
+              <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
             </state>
           </provider>
         </entry>
@@ -434,8 +432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/class_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="151" column="55" selection-start-line="151" selection-start-column="55" selection-end-line="151" selection-end-column="55" />
+        <state relative-caret-position="229">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
         </state>
       </provider>
     </entry>
