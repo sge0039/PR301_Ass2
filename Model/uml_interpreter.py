@@ -24,7 +24,7 @@ class UmlInterpreter:
                 class_dict.clear()
                 method_list = []
                 attr_list = []
-            elif '--' in line:
+            elif self.is_relationship(line):
                 relationship.append(self.uml_relationship(line))
             elif self.is_attribute(line):
                 attr_list.append(self.uml_attribute(line))
@@ -38,6 +38,9 @@ class UmlInterpreter:
 
     def is_attribute(self, line):
         return '(' not in line and ')' not in line and '@' not in line and len(line) > 1
+
+    def is_relationship(self, line):
+        return '--' in line
 
     def uml_relationship(self, new_line):
         try:
