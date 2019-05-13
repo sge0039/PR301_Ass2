@@ -17,7 +17,7 @@ class UmlInterpreter:
             if self.is_class(line):
                 self.class_dict['class'] = self.char_remover(line, ['class', ' ', '{', '\t', '\n'])
             elif self.is_method(line):
-                method_list.append(self.uml_method(line))
+                method_list.append(self.char_remover(line, ['\n', '\t', ' ']))
             elif self.is_class_end(line):
                 self.class_end(attr_list, method_list)
                 method_list = []
@@ -80,16 +80,6 @@ class UmlInterpreter:
                 item['relationship'] = relationship_list
                 relationship_list = []
         return new_uml_list
-
-    def uml_method(self, new_line):
-        """
-        >>> line = '  getBlock()\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'getBlock()'
-        """
-        remove_list = ['\n', '\t', ' ']
-        return self.char_remover(new_line, remove_list)
 
     def uml_attribute(self, new_line):
         """
