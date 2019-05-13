@@ -5,30 +5,50 @@ except ImportError:
 
 
 class UmlInterpreter:
+    def __init__(self):
+        self.class_dict = {}
+        self.uml_list = []
+
     def uml_decoder(self, uml_content):
-        uml_list = []
-        class_dict = {}
         attr_list = []
         method_list = []
         relationship = []
         for line in uml_content:
-            if 'class' in line:
-                class_dict['class'] = self.uml_class(line)
-            elif '(' in line and ')' in line:
+            if self.is_class(line):
+                self.class_dict['class'] = self.uml_class(line)
+            elif self.is_method(line):
                 method_list.append(self.uml_method(line))
-            elif '}' in line:
-                class_dict['attribute'] = attr_list
-                class_dict['method'] = method_list
-                temp_dict = class_dict.copy()
-                uml_list.append(temp_dict)
-                class_dict.clear()
+            elif self.is_class_end(line):
+                self.class_end(attr_list, method_list)
                 method_list = []
                 attr_list = []
-            elif '--' in line:
+            elif self.is_relationship(line):
                 relationship.append(self.uml_relationship(line))
-            elif '(' not in line and ')' not in line and '@' not in line and len(line) > 1:
+            elif self.is_attribute(line):
                 attr_list.append(self.uml_attribute(line))
-        return self.place_relationship(relationship, uml_list)
+        return self.place_relationship(relationship, self.uml_list)
+
+    def is_class(self, line):
+        return 'class' in line
+
+    def is_method(self, line):
+        return '(' in line and ')' in line
+
+    def is_attribute(self, line):
+        return '(' not in line and ')' not in line and '@' not in line and len(line) > 1
+
+    def is_relationship(self, line):
+        return '--' in line
+
+    def is_class_end(self, line):
+        return '}' in line
+
+    def class_end(self, attr_list, method_list):
+        self.class_dict['attribute'] = attr_list
+        self.class_dict['method'] = method_list
+        temp_dict = self.class_dict.copy()
+        self.uml_list.append(temp_dict)
+        self.class_dict.clear()
 
     def uml_relationship(self, new_line):
         try:
