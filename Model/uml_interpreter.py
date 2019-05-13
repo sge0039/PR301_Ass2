@@ -26,7 +26,7 @@ class UmlInterpreter:
                 attr_list = []
             elif '--' in line:
                 relationship.append(self.uml_relationship(line))
-            elif '(' not in line and ')' not in line and '@' not in line and len(line) > 1:
+            elif self.is_attribute(line):
                 attr_list.append(self.uml_attribute(line))
         return self.place_relationship(relationship, uml_list)
 
@@ -35,6 +35,9 @@ class UmlInterpreter:
 
     def is_method(self, line):
         return '(' in line and ')' in line
+
+    def is_attribute(self, line):
+        return '(' not in line and ')' not in line and '@' not in line and len(line) > 1
 
     def uml_relationship(self, new_line):
         try:
