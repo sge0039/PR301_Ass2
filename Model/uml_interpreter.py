@@ -15,7 +15,7 @@ class UmlInterpreter:
         relationship = []
         for line in uml_content:
             if self.is_class(line):
-                self.class_dict['class'] = self.uml_class(line)
+                self.class_dict['class'] = self.char_remover(line, ['class', ' ', '{', '\t', '\n'])
             elif self.is_method(line):
                 method_list.append(self.uml_method(line))
             elif self.is_class_end(line):
@@ -80,16 +80,6 @@ class UmlInterpreter:
                 item['relationship'] = relationship_list
                 relationship_list = []
         return new_uml_list
-
-    def uml_class(self, new_line):
-        """
-        >>> line = 'class LevelEditor{\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'LevelEditor'
-        """
-        remove_list = ['class', ' ', '{', '\t', '\n']
-        return self.char_remover(new_line, remove_list)
 
     def uml_method(self, new_line):
         """
