@@ -15,9 +15,9 @@ class UmlInterpreter:
         relationship = []
         for line in uml_content:
             if self.is_class(line):
-                self.class_dict['class'] = self.uml_class(line)
+                self.class_dict['class'] = self.char_remover(line, ['class', ' ', '{', '\t', '\n'])
             elif self.is_method(line):
-                method_list.append(self.uml_method(line))
+                method_list.append(self.char_remover(line, ['\n', '\t', ' ']))
             elif self.is_class_end(line):
                 self.class_end(attr_list, method_list)
                 method_list = []
@@ -25,7 +25,7 @@ class UmlInterpreter:
             elif self.is_relationship(line):
                 relationship.append(self.uml_relationship(line))
             elif self.is_attribute(line):
-                attr_list.append(self.uml_attribute(line))
+                attr_list.append(self.char_remover(line, ['\n', '\t', '(', ')', ' ']))
         return self.place_relationship(relationship, self.uml_list)
 
     def is_class(self, line):
@@ -80,36 +80,6 @@ class UmlInterpreter:
                 item['relationship'] = relationship_list
                 relationship_list = []
         return new_uml_list
-
-    def uml_class(self, new_line):
-        """
-        >>> line = 'class LevelEditor{\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'LevelEditor'
-        """
-        remove_list = ['class', ' ', '{', '\t', '\n']
-        return self.char_remover(new_line, remove_list)
-
-    def uml_method(self, new_line):
-        """
-        >>> line = '  getBlock()\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'getBlock()'
-        """
-        remove_list = ['\n', '\t', ' ']
-        return self.char_remover(new_line, remove_list)
-
-    def uml_attribute(self, new_line):
-        """
-        >>> line = '  allMyBlocks\\n'
-        >>> interpreter = UmlInterpreter()
-        >>> interpreter.uml_class(line)
-        'allMyBlocks'
-        """
-        remove_list = ['\n', '\t', '(', ')', ' ']
-        return self.char_remover(new_line, remove_list)
 
     def char_remover(self, string_input, remove_list):
         """
