@@ -150,12 +150,16 @@ class ClassMaker:
                 method_name_arg = method.replace(')', '').split('(')
             method_name = self.name_to_lower(method_name_arg[0])
             method_args = method_name_arg[1].split(',')
-            methods += View.tab() + 'def ' + method_name + '(self'
-            methods += self.method_parameter(method_args)
             return_type = self.method_return_type(method_name_arg_data_type)
-            methods += '):' + View.newline()
-            methods += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+            methods += self.method_format(method_name, method_args, return_type)
         return methods
+
+    def method_format(self, method_name, method_args, return_type):
+        result = View.tab() + 'def ' + method_name + '(self'
+        result += self.method_parameter(method_args)
+        result += '):' + View.newline()
+        result += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+        return result
 
     def method_parameter(self, para_list):
         result = ''
