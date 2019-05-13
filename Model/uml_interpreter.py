@@ -16,7 +16,7 @@ class UmlInterpreter:
                 class_dict['class'] = self.uml_class(line)
             elif self.is_method(line):
                 method_list.append(self.uml_method(line))
-            elif '}' in line:
+            elif self.is_class_end(line):
                 class_dict['attribute'] = attr_list
                 class_dict['method'] = method_list
                 temp_dict = class_dict.copy()
@@ -41,6 +41,9 @@ class UmlInterpreter:
 
     def is_relationship(self, line):
         return '--' in line
+
+    def is_class_end(self, line):
+        return '}' in line
 
     def uml_relationship(self, new_line):
         try:
