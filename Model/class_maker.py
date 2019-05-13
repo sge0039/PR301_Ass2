@@ -49,12 +49,10 @@ class ClassMaker:
         try:
             print("This is the beginning.")
             class_name = new_class_name.replace(new_class_name[0], new_class_name[0].upper(), 1)
-        except ValueError as err:
+        except AttributeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
-        except:
-            print("An unexpected exception just happened.")
         else:
             print("No exception is raised")
             return 'class ' + class_name + ':' + View.newline()
@@ -109,7 +107,7 @@ class ClassMaker:
         >>> c_maker.get_data_type(data)
         'not_data_type'
         """
-        data_type_dict = {'String': 'str', 'Interger': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
+        data_type_dict = {'String': 'str', 'Integer': 'int', 'Float': 'float', 'Boolean': 'bool', 'List': '[]',
                           'Tuple': '()', 'Dict': '{}'}
         if new_data in data_type_dict.keys():
             return data_type_dict[new_data]
@@ -123,7 +121,7 @@ class ClassMaker:
             for relationship in new_relationship:
                 relationships.append(relationship.replace(':', ': '))
             # raise MyError("test: raise an exception")
-        except ValueError as err:
+        except TypeError as err:
             print("The exception is: ", err)
         except MyError as err:
             print(err)
@@ -152,17 +150,28 @@ class ClassMaker:
                 method_name_arg = method.replace(')', '').split('(')
             method_name = self.name_to_lower(method_name_arg[0])
             method_args = method_name_arg[1].split(',')
-            methods += View.tab() + 'def ' + method_name + '(self'
-            for arg in method_args:
-                if len(arg) > 0:
-                    methods += ', ' + self.name_to_lower(arg)
-            if len(method_name_arg_data_type) > 1:
-                return_type = 'return ' + self.get_data_type(method_name_arg_data_type[1])
-            else:
-                return_type = 'pass'
-            methods += '):' + View.newline()
-            methods += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+            return_type = self.method_return_type(method_name_arg_data_type)
+            methods += self.method_format(method_name, method_args, return_type)
         return methods
+
+    def method_format(self, method_name, method_args, return_type):
+        result = View.tab() + 'def ' + method_name + '(self'
+        result += self.method_parameter(method_args)
+        result += '):' + View.newline()
+        result += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+        return result
+
+    def method_parameter(self, para_list):
+        result = ''
+        for para in para_list:
+            if len(para) > 0:
+                result += ', ' + self.name_to_lower(para)
+        return result
+
+    def method_return_type(self, data):
+        if len(data) > 1:
+            return 'return ' + self.get_data_type(data[1])
+        return 'pass'
 
     def class_designer(self, new_dict):
         file_name = self.file_name(new_dict['class'])
