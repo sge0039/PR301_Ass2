@@ -12,7 +12,7 @@ class UmlInterpreter:
         method_list = []
         relationship = []
         for line in uml_content:
-            if 'class' in line:
+            if self.is_class(line):
                 class_dict['class'] = self.uml_class(line)
             elif '(' in line and ')' in line:
                 method_list.append(self.uml_method(line))
@@ -29,6 +29,9 @@ class UmlInterpreter:
             elif '(' not in line and ')' not in line and '@' not in line and len(line) > 1:
                 attr_list.append(self.uml_attribute(line))
         return self.place_relationship(relationship, uml_list)
+
+    def is_class(self, line):
+        return 'class' in line
 
     def uml_relationship(self, new_line):
         try:
