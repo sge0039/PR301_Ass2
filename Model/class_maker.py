@@ -150,17 +150,28 @@ class ClassMaker:
                 method_name_arg = method.replace(')', '').split('(')
             method_name = self.name_to_lower(method_name_arg[0])
             method_args = method_name_arg[1].split(',')
-            methods += View.tab() + 'def ' + method_name + '(self'
-            for arg in method_args:
-                if len(arg) > 0:
-                    methods += ', ' + self.name_to_lower(arg)
-            if len(method_name_arg_data_type) > 1:
-                return_type = 'return ' + self.get_data_type(method_name_arg_data_type[1])
-            else:
-                return_type = 'pass'
-            methods += '):' + View.newline()
-            methods += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+            return_type = self.method_return_type(method_name_arg_data_type)
+            methods += self.method_format(method_name, method_args, return_type)
         return methods
+
+    def method_format(self, method_name, method_args, return_type):
+        result = View.tab() + 'def ' + method_name + '(self'
+        result += self.method_parameter(method_args)
+        result += '):' + View.newline()
+        result += View.tab() + View.tab() + return_type + View.newline() + View.newline()
+        return result
+
+    def method_parameter(self, para_list):
+        result = ''
+        for para in para_list:
+            if len(para) > 0:
+                result += ', ' + self.name_to_lower(para)
+        return result
+
+    def method_return_type(self, data):
+        if len(data) > 1:
+            return 'return ' + self.get_data_type(data[1])
+        return 'pass'
 
     def class_designer(self, new_dict):
         file_name = self.file_name(new_dict['class'])
