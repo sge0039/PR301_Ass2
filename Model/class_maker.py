@@ -154,13 +154,15 @@ class ClassMaker:
             for arg in method_args:
                 if len(arg) > 0:
                     methods += ', ' + self.name_to_lower(arg)
-            if len(method_name_arg_data_type) > 1:
-                return_type = 'return ' + self.get_data_type(method_name_arg_data_type[1])
-            else:
-                return_type = 'pass'
+            return_type = self.method_return_type(method_name_arg_data_type)
             methods += '):' + View.newline()
             methods += View.tab() + View.tab() + return_type + View.newline() + View.newline()
         return methods
+
+    def method_return_type(self, data):
+        if len(data) > 1:
+            return 'return ' + self.get_data_type(data[1])
+        return 'pass'
 
     def class_designer(self, new_dict):
         file_name = self.file_name(new_dict['class'])
